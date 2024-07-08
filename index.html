@@ -3,73 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dugot' Website</title>
-    <link rel="stylesheet" href="index.css"> <!-- Link to external CSS file -->
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Welcome to My Portfolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
 
-        <main>
-            <section id="intro">
-                <h2>About Me</h2>
-                <p>My name is Alexandre Dugot, I'm in my last year of engineer school in Network, telecom and security. On this page I will present you some personal and school projects I did during my studies</p>
-            </section>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <section id="projects">
-                <h2>My Projects</h2>
-                <div class="project-grid">
-                    <div class="project">
-                        <h3>Frame_decoder</h3>
-                        <p>From a c file extract from frame capture tool Wireshark</p>
-                        <a href="project1.html">View Project</a>
-                    </div>
-                    <div class="project">
-                        <h3>VirtualSwitchTest</h3>
-                        <p>Create a virtual switch on a pc that can connect some instance and transmit frames</p>
-                        <a href="project2.html">View Project</a>
-                    </div>
-                    <div class="project">
-                        <h3>PMS</h3>
-                        <p></p>
-                        <a href="project3.html">View Project</a>
-                    </div>
-                    <div class="project">
-                        <h3>ZOGLU</h3>
-                        <p></p>
-                        <a href="project4.html">View Project</a>
-                    </div>
-                </div>
-            </section>
+<div class="container">
 
-            <section id="contact">
-                <h2>Contact Me</h2>
-                <form action="#" method="post">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Add some information about yourself here.</p>
+    </section>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Frame decoder</h3>
+            <img src="decoder.jfif" alt="Placeholder image">
+            <p>The project take some wireshark's datas extracted in c files in hexa format and then the project decode the trames into readable datas</p>
+            <li><a href="project1.html" class="button">Click here to access more details</a></li>
 
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
+        </div>
+        <div class="project">
+            <h3>Virtual switch</h3>
+            <p>Description of Project 2.</p>
+            <li><a href="project2.html" class="button">Click here to access more details</a></li>
+        </div>
+        <div class="project">
+            <h3>PMS</h3>
+            <p>Description of Project 2.</p>
+            <li><a href="project3.html" class="button">Click here to access more details</a></li>
+        </div>
+        <div class="project">
+            <h3>ZOGLU</h3>
+            <p>Description of Project 2.</p>
+            <li><a href="project4.html" class="button">Click here to access more details</a></li>
+        </div>
+        <div class="project">
+            <h3>Some GNS3 projects</h3>
+            <p>Description of Project 2.</p>
+            <li><a href="project5.html" class="button">Click here to access more details</a></li>
+        </div>
+    </section>
 
-                    <button type="submit">Send</button>
-                </form>
-            </section>
-        </main>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</div>
 
-        <footer>
-            Here you have all of my contacts
-        </footer>
-    </div>
+<footer>
+    <p>&copy; 2024 Your Name. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
