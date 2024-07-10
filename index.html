@@ -1,79 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="index.css">
+    <title>School Projects</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
 
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="bg-gray-100 text-gray-900">
 
-<div class="container">
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Add some information about yourself here.</p>
-    </section>
-
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project">
-            <h3>Frame decoder</h3>
-            <img src="images/decoder.jfif" alt="Placeholder image">
-            <p>The project take some wireshark's datas extracted in c files in hexa format and then the project decode the trames into readable datas</p>
-            <li><a href="project1.html" class="button">Click here to access more details</a></li>
-
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-600 p-4 text-white">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold">My Projects</a>
+            <div class="space-x-4">
+                <a href="#" class="hover:underline">Home</a>
+                <a href="#projects" class="hover:underline">Projects</a>
+                <a href="#contact" class="hover:underline">Contact</a>
+            </div>
         </div>
-        <div class="project">
-            <h3>Virtual switch</h3>
-            <p>Description of Project 2.</p>
-            <li><a href="project2.html" class="button">Click here to access more details</a></li>
-        </div>
-        <div class="project">
-            <h3>PMS</h3>
-            <p>Description of Project 2.</p>
-            <li><a href="project3.html" class="button">Click here to access more details</a></li>
-        </div>
-        <div class="project">
-            <h3>ZOGLU</h3>
-            <p>Description of Project 2.</p>
-            <li><a href="project4.html" class="button">Click here to access more details</a></li>
-        </div>
-        <div class="project">
-            <h3>Some GNS3 projects</h3>
-            <p>Description of Project 2.</p>
-            <li><a href="project5.html" class="button">Click here to access more details</a></li>
+    </nav>
+
+    <section class="bg-white p-8 shadow-md">
+        <div class="container mx-auto">
+            <h1 class="text-4xl font-bold mb-4">Welcome to My Projects Showcase</h1>
+            <p class="text-lg mb-4">
+                Hello! I'm [Your Name], a passionate student eager to share the projects I've developed during my studies. This website is a portfolio of my academic work, highlighting my journey, skills, and achievements. I hope you find these projects insightful and
+                inspiring.
+            </p>
+            <p class="text-lg">
+                Feel free to explore the projects section to learn more about each project. If you have any questions or would like to get in touch, head over to the contact section. Thank you for visiting!
+            </p>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-</div>
+    <!-- Main Content -->
+    <main class="container mx-auto my-8 p-4">
 
-<footer>
-    <p>&copy; 2024 Your Name. All rights reserved.</p>
-</footer>
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2 class="text-3xl font-bold mb-4">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="text-xl font-semibold mb-2">Project 1</h3>
+                    <p class="mb-2">Description of project 1.</p>
+                    <a href="project1.html" class="text-blue-500 hover:underline">Read more</a>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="text-xl font-semibold mb-2">Project 2</h3>
+                    <p class="mb-2">Description of project 2.</p>
+                    <a href="project2.html" class="text-blue-500 hover:underline">Read more</a>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="text-xl font-semibold mb-2">Project 3</h3>
+                    <p class="mb-2">Description of project 2.</p>
+                    <a href="project3.html" class="text-blue-500 hover:underline">Read more</a>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="text-xl font-semibold mb-2">Project 4</h3>
+                    <p class="mb-2">Description of project 2.</p>
+                    <a href="project4.html" class="text-blue-500 hover:underline">Read more</a>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="text-xl font-semibold mb-2">Project 5</h3>
+                    <p class="mb-2">Description of project 2.</p>
+                    <a href="project5.html" class="text-blue-500 hover:underline">Read more</a>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="text-xl font-semibold mb-2">Project 6</h3>
+                    <p class="mb-2">Description of project 2.</p>
+                    <a href="project6.html" class="text-blue-500 hover:underline">Read more</a>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact" class="mt-8">
+            <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+            <form class="bg-white p-6 rounded shadow">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium">Name</label>
+                    <input type="text" id="name" name="name" class="w-full border border-gray-300 p-2 rounded mt-1" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium">Email</label>
+                    <input type="email" id="email" name="email" class="w-full border border-gray-300 p-2 rounded mt-1" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-sm font-medium">Message</label>
+                    <textarea id="message" name="message" class="w-full border border-gray-300 p-2 rounded mt-1" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Send</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto text-center">
+            <p>Contact Information:</p>
+            <p>Email: <a href="mailto:your-email@example.com" class="underline">your-email@example.com</a></p>
+            <p>Phone: <a href="tel:+123456789" class="underline">+123 456 789</a></p>
+        </div>
+    </footer>
 
 </body>
+
 </html>
